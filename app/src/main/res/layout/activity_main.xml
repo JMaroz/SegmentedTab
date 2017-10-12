@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context="com.marozzi.app.MainActivity">
+
+    <com.marozzi.segmentedtab.SegmentedGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:sg_background_color="@android:color/transparent"
+        app:sg_background_color_selected="@color/colorAccent"
+        app:sg_corner_color="@color/colorAccent"
+        app:sg_corner_radius="20dp"
+        app:sg_corner_size="2dp"
+        app:sg_text_color="@color/colorAccent"
+        app:sg_text_color_selected="@android:color/white">
+
+        <com.marozzi.segmentedtab.SegmentedTab
+            android:id="@+id/element_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Element 1" />
+
+        <com.marozzi.segmentedtab.SegmentedTab
+            android:id="@+id/element_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Element 2" />
+
+        <com.marozzi.segmentedtab.SegmentedTab
+            android:id="@+id/element_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Element 3" />
+
+    </com.marozzi.segmentedtab.SegmentedGroup>
+
+</LinearLayout>
