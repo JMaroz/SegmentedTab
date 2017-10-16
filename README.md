@@ -16,7 +16,7 @@ A lookalike iOS Segmented Control for Android
 
 [ ![Download](https://api.bintray.com/packages/maro/maven/SegmentedTab/images/download.svg) ](https://bintray.com/maro/maven/SegmentedTab/_latestVersion)
 
-    compile 'com.marozzi.roundbutton:round-button:1.0.0'
+    compile 'com.marozzi.segmentedtab:segmented-tab:1.0.2'
 
 ## How to use
 
