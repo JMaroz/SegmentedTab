@@ -14,7 +14,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ((SegmentedGroup) findViewById(R.id.group)).setOnSegmentedGroupListener(new SegmentedGroup.OnSegmentedGroupListener() {
+        ((SegmentedGroup) findViewById(R.id.group_one)).setOnSegmentedGroupListener(new SegmentedGroup.OnSegmentedGroupListener() {
+            @Override
+            public void onSegmentedTabSelected(SegmentedTab tab, int checkedId) {
+                Toast.makeText(MainActivity.this, tab.getText(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        ((SegmentedGroup) findViewById(R.id.group_two)).setOnSegmentedGroupListener(new SegmentedGroup.OnSegmentedGroupListener() {
             @Override
             public void onSegmentedTabSelected(SegmentedTab tab, int checkedId) {
                 Toast.makeText(MainActivity.this, tab.getText(), Toast.LENGTH_SHORT).show();
